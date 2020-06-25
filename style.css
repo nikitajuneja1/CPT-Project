@@ -1,0 +1,12 @@
+.jumbotron{
+  padding-top: 100px;
+  background: rgb(102, 153, 153, 0.85);
+}
+.bg{
+  background: url(food.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+}
