@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FoodBooker</title>
+		<link rel="icon" href="food.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="styles/reset.css" />
+		<link rel="stylesheet" href="styles/text.css" />
+	</head>
+	<body>
+		<section data-role="background"></section>
+		<section data-role="foreground">
+			<h1>Ask the FoodBooker</h1>
+			<form>
+				<label for="cities">You live in:</label>
+				<select></select>
+				<button disabled>
+					Getting city data. One sec.
+				</button>
+				<output data-showing="not_showing">
+				</output>
+			</form>
+		</section>
+		<script src="scripts/config.js"></script>
+		<script src="scripts/jquery_3.3.1.min.js"></script>
+		<script src="scripts/helper.js"></script>
+		<script src="scripts/text.js"></script>
+	</body>
+</html>

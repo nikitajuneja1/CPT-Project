@@ -1,0 +1,106 @@
+body{
+	font-family: sans-serif;
+}
+h1, h2{
+    background-color: #444448;
+    color: white;
+    padding: 16px 24px;
+    margin: 0;
+    font-size: 19px;
+    text-align: center;
+    border-bottom: 1px solid #87878e;
+}
+label, input{
+	display: block;
+	font-size: 1.4em;
+}
+label{
+    margin-top: 42px;
+    color: white;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+output{
+    font-size: 20px;
+    margin-top: 2em;
+    display: block;
+    color: #c0d8c6;
+    padding: 20px;
+    text-align: center;
+}
+output[data-showing="showing"]{
+	transition: opacity 0.6s ease 0s;
+	opacity: 1;
+}
+output[data-showing="not_showing"]{
+	opacity: 0;
+}
+select {
+    -webkit-appearance: menulist-text;
+    width: 91%;
+    margin-left: 12px;
+    font-size: 16px;
+    outline: none;
+    padding: 12px;
+    cursor: pointer;
+    background: #444448;
+    color: white;
+    text-transform: capitalize;
+    text-align-last:center;
+}
+button {
+  	border: 3px solid #676d67;
+    background: #e7e7e8;
+    color: #676d67;
+    border-radius: 12px;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    display: block;
+    text-align: center;
+    width: 224px;
+    margin-left: 15px;
+    margin-top: 32px;
+    transition: color 0.24s ease-in-out 0s,
+    			border-color 0.24s ease-in-out 0s
+}
+button:hover:active{
+	transition: none;
+	color: #3c6f43;
+	border-color: #3c6f43
+}
+button:hover{
+	color: #444448;
+	border-color: #444448;
+}
+button:disabled {
+	background-color: yellow;
+	opacity: 0.5;
+	color: grey;
+	cursor: progress;
+}
+[data-role="foreground"]{
+    position: fixed;
+    top: 200px;
+    left: 550px;
+    width: 256px;
+    height: 500px;
+    background: rgb(102, 153, 153, 0.85);
+    overflow: hidden;
+}
+
+[data-role="background"]{
+	background: url(./../images/food.jpg);
+	background-size: 100%;
+  background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
