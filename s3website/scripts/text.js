@@ -22,7 +22,7 @@ var
  */
 function _askTheFakeBot(city_str, cb){
 	var
-		hard_coded_temp_int = "yes",
+		hard_coded_temp_int = 1,
 		response_str = "";
 	cb(g_customizeResponse(city_str, hard_coded_temp_int));
 }

@@ -1,6 +1,6 @@
 <?php
-
-$servername = "localhost:3306";
+session_start();
+$servername = "localhost";
 $username = "webuser";
 $password = "secretpassword";
 $dbname = "login";
@@ -17,24 +17,12 @@ $password = $_POST["password"];
 $salt = "login";
 $password_encrypted = sha1($password.$salt);
 
-
-$sql = "INSERT INTO `users` (`name`, `email`, `password_encrypted`)
+$sql = "INSERT INTO userDetails (name, email, password)
 VALUES ('$name', '$email', '$password_encrypted')";
 
-if($conn->query($sql) === TRUE){
-	?>
-	<script>
-		alert('Values have been inserted');
-	</script>
-	<?php
+if (mysqli_query($conn, $sql)) {
+  echo "New record created successfully!";
+} else {
+  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-else{
-	?>
-	<script>
-		alert('Values did not insert');
-	</script>
-	<?php
-}
-
-
 ?>

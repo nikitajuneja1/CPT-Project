@@ -51,7 +51,13 @@ function g_loadTheCitiesIntoDropDown($parent_drop_down_el, parent_cb){
 }
 function g_customizeResponse(city_str, temp_int){
 	var message_str;
+	console.log(temp_int);
+	if(temp_int == 1){
+		message_str = "Pickup is available at your location!";
+	}
+	else{
 	message_str = "Sorry, Pickup isn't available at your location!";
+	}
 		// message_str += "<br /><br />";
 	return message_str;
 }
